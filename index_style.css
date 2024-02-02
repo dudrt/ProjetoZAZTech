@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.div_main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Parte do topo do site */
+.div_top{
+    
+    font-size: 330%;
+    font-family: 'Kanit';
+    display: block;
+    top: 0%;
+    height: 20%;
+    padding: 1%;
+}
+/* FIM */
+
+/* Tabela das tarefas */
+.info_tarefa{
+    
+    cursor: pointer;
+}
+.show_tarefas{
+    font-family:'Raleway';
+    background-color: rgb(225, 242, 255);
+    margin-right: 2%;
+    width: 82%;
+
+}
+
+table{
+
+    border-spacing: 0px;
+}
+.coluna{
+    padding: 6px;
+}
+
+.borda{
+    border-top: 1px solid black;
+
+}
+
+tr{
+
+    padding: 0;
+}
+
+/* FIM */
+
+/* Tabela de outrs funcionalidades */
+.div_options{
+    margin-left: 1%;
+
+    width: 18%;
+}
+.text_div_options{
+    margin-top: 5%;
+    background-color: transparent;
+    border: 0px;
+    color: aliceblue;
+
+    font-size: 120%;
+}
+.botao_newfunc{
+    margin-top: 5%;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 60px;
+    color: aliceblue;
+    font-size: 120%;
+
+}
+.botao_newfunc:hover {
+    background-color: #FFFF; 
+    transition: 0.5s;
+    color: black;
+    opacity: 0.7;
+
+}
+
+
+/* FIM */
