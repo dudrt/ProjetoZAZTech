@@ -8,5 +8,6 @@ echo $campo1;
 
 
 
+mysqli_close($banco);
 
 ?>

@@ -1,0 +1,105 @@
+body{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    margin-top: 10%;
+    padding: 0;
+    background-image: url("../img/back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html{
+    display: unset;
+}
+
+
+
+
+
+/* Parte do topo do site */
+.div_top{
+    position: absolute;
+    font-size: 330%;
+    font-family: 'Kanit';
+    display: block;
+    top: 0%;
+    height: 10%;
+    padding: 1%;
+}
+/* FIM */
+
+/* Formulário */
+
+form{
+    display: flex;
+}
+.div_form_main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+div{
+    
+    display: grid;
+}
+.div_left{
+    width: 50%;
+    margin-right: 40%;
+}
+.div_right{
+    width: 50%;
+}
+
+.input_desc{
+    width: 130%;
+    height: 140%;
+}
+.input_nome{
+    
+}
+
+.button_div{
+    margin-top: 5%;
+    display: inline;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_cancel{
+    padding: 0%;
+    margin: 0%;
+    width: 48%;
+}
+.button_submit{
+    padding: 0%;
+    margin: 0%;
+    width: 48%;
+}
+
+
+
+/* FIM */
+/* Botão de voltar */
+
+.voltar{
+    position: absolute;
+    top: 0%;
+    margin-top: 10%;
+}
+.voltar_button{
+    background-color: aliceblue;
+    border-radius: 60px;
+    border: 0px;
+    cursor: pointer;
+    font-size: 100%;}
+
+.voltar_button:hover{
+    transition: 0.5s;
+
+    background-color: #252525;
+    color: aliceblue;
+}
+/* FIM */

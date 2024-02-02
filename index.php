@@ -21,8 +21,8 @@
 
 <div class="div_options">
     <label class="text_div_options">Outras Funcionalidades</label>
-    <a href="add_pessoa/add_pessoa.html"><button class="botao_newfunc">Adicionar Pessoas</button></a>
-
+    <a href="add_tarefa/add_tarefa.php"><button class="botao_newfunc">Adicionar Tarefas</button></a>
+    <a href="add_pessoa/add_pessoa.php"><button class="botao_newfunc">Adicionar Pessoas</button></a>
 </div>
 
 
@@ -61,4 +61,6 @@ while ( $rows = mysqli_fetch_array( $resultado_cadastros )){
     </tr>';
 }
 echo '</table></div></body></html>';
+mysqli_close($banco);
+
 ?>
