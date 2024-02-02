@@ -29,7 +29,7 @@ Caso não funcione, tente criar um banco de dados com o nome `controle_tarefa` e
 ### Site
 Basta ir no aplicativo do XAMP e clicar em `Admin` na linha `Apache` e selecionar a pasta `ProjetoZAZTech`.<br>
 # Considerações Finais
-Este projeto foi muito interessante ,pois me fez pôr em prática novamente meus conhecimentos em PHP e Banco de Dados.<br>
+Este projeto foi muito interessante, pois me fez pôr em prática novamente meus conhecimentos em PHP e Banco de Dados.<br>
 Aguardo o contato para que possamos conversar!
 <br><br><br>
 
