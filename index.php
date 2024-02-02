@@ -40,11 +40,14 @@ $resultado_cadastros = mysqli_query( $banco, $result_cadastros);
 $prioridade = ["Baixa","Normal","Alta"];
 $estado = ["Pendente","Em andamento","Concluída"];
 
+
 while ( $rows = mysqli_fetch_array( $resultado_cadastros )){
+    // testa se tem alguem tribuido aquela tarefa, se 0, significa que não possui nenhum id válido, logo nao tem ninguem.
     $pessoa_atribuida = "";
     if($rows["pessoa_atribuida"]==0){
         $pessoa_atribuida = "Nenhuma";
     }else{
+        // caso tenha, pega o nome da pessoa
         $id = $rows["pessoa_atribuida"];
         $query = "SELECT nome FROM pessoas WHERE id = $id";
         $result = mysqli_query( $banco, $query);
@@ -52,8 +55,19 @@ while ( $rows = mysqli_fetch_array( $resultado_cadastros )){
         
     }
 
+
+    // Faz o teste e determina o nível de prioridade para determinar qual classe entrará
+    if($rows["prioridade"]-1 == 0){
+        $class_prioridade = 'baixa';
+    }else if( $rows['prioridade']-1 == 1){
+        $class_prioridade = 'normal';
+    }else{
+        $class_prioridade = 'alta';
+    }
+    
+
     echo '
-    <tr class="info_tarefa" OnClick="EnviarModTarefa('.$rows["id"].')">
+    <tr class="info_tarefa '.$class_prioridade.'" OnClick="EnviarModTarefa('.$rows["id"].')">
     <td class="coluna borda">'.$rows["nome"].'</td>
     <td class="coluna borda">'.$prioridade[$rows["prioridade"]-1].'</td>
     <td class="coluna borda">'.$estado[$rows["estado"]-1].'</td>

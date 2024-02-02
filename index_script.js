@@ -1,5 +1,5 @@
 
-
+// pequeno script para conseguir enviar o ID
 function EnviarModTarefa(id){
         // Construindo a  URL para redirecionamento contendo o ID da tarefa desejada
         var url = 'mod_tarefa/mod_tarefa.php?id=' + encodeURIComponent(id)

@@ -4,7 +4,7 @@ include('../call_db.php');
 
 $id = $_GET['id'];
 
-
+// Aqui a pessoa é deletada
 $query="DELETE FROM pessoas WHERE id=$id";
 if(mysqli_query($banco, $query)){//testa se deu certo
 

@@ -1,4 +1,5 @@
 <?php
+// Apenas um código para se conectar ao banco de dados
 $servidor='localhost';
 $usuario = 'root';
 $senha='';
