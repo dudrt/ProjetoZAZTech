@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="https://www.zaztech.com.br/wp-content/uploads/2021/01/Z-480x480.png" sizes="192x192">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ZAZTech</title>
     <style>@import url(index_style.css);
   @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Nanum+Gothic&family=Raleway&display=swap');
 </style>
